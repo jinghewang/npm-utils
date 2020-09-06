@@ -35,6 +35,29 @@ const self = {
         } else {
             return defaultVal;
         }
+    },
+    // 生成guid,主要用于生成随机文件名
+    guid: (opts = {}) => {
+        //toUpperCase
+        //toLowerCase
+        function S4() {
+            return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+        }
+
+        let text = (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+        let upper = opts['upper'] || false;
+        if (upper) {
+            text = text.toUpperCase();
+        }
+        //text = self.replaceAll(text,'-','');
+        return text;
+    },
+    replaceAll: function(text, searchValue, replacer) {//searchValue  string replacer
+        return text.replace(new RegExp(searchValue, "gm"), replacer);
+    },
+    timestamp: () => { //毫秒的时间戳
+        let timestamp = (new Date()).valueOf();
+        return timestamp;
     }
 };
 
