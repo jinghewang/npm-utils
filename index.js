@@ -58,6 +58,9 @@ const self = {
     timestamp: () => { //毫秒的时间戳
         let timestamp = (new Date()).valueOf();
         return timestamp;
+    },
+    timestampOfSecond: () => { //秒的时间戳
+        return parseInt(self.timestamp() / 1000);
     }
 };
 
