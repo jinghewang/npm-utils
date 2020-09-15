@@ -1,5 +1,4 @@
 var _ = require('lodash');
-var {dateFormat, nowFormat} = require('./date');
 
 const self = {
 
@@ -53,7 +52,7 @@ const self = {
         //text = self.replaceAll(text,'-','');
         return text;
     },
-    replaceAll: function (text, searchValue, replacer) {//searchValue  string replacer
+    replaceAll: function(text, searchValue, replacer) {//searchValue  string replacer
         return text.replace(new RegExp(searchValue, "gm"), replacer);
     },
     timestamp: () => { //毫秒的时间戳
@@ -62,9 +61,7 @@ const self = {
     },
     timestampOfSecond: () => { //秒的时间戳
         return parseInt(self.timestamp() / 1000);
-    },
-    dateFormat: dateFormat,
-    nowFormat: nowFormat,
+    }
 };
 
 module.exports = self;
