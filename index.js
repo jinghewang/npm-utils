@@ -65,6 +65,7 @@ const self = {
     },
     dateFormat: dateFormat,
     nowFormat: nowFormat,
+    nowFormat2: nowFormat2,
 };
 
 module.exports = self;

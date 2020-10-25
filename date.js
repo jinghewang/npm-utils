@@ -26,7 +26,14 @@ const nowFormat = (fmt)=>{
     return dateFormat(fmt,date);
 }
 
+const nowFormat2 = (fmt)=>{
+    fmt = fmt || 'yyyy-MM-dd HH:mm:ss S';
+    let date = new Date();
+    return dateFormat(fmt,date);
+}
+
 module.exports = exports = {
     dateFormat: dateFormat,
-    nowFormat: nowFormat
+    nowFormat: nowFormat,
+    nowFormat2: nowFormat2,
 }
