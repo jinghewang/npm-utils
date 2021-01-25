@@ -1,5 +1,5 @@
 var _ = require('lodash');
-var {dateFormat, nowFormat} = require('./date');
+var {dateFormat, nowFormat, nowFormat2} = require('./date');
 
 const self = {
 
