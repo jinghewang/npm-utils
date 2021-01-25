@@ -1,18 +1,16 @@
 # npm-utils
-
 npm utils for nodejs
 
 ## install
-npm install -g npm-hello
+npm install @woodw/npm-utils
 
 ## github
 https://github.com/jinghewang/npm-utils
 
 ## usage
 ```
-const tools = require('@woodw/npm-utils');
-
-tools.test('hello boy');
+const utils = require('@woodw/npm-utils');
+utils.test('hello boy');
 ```
 
 ## 参考
@@ -27,7 +25,7 @@ tools.test('hello boy');
  ```
  npm publish 
  ```
-或 
-```
-npm publish --access=public (私有域)
-```
+ 或 
+ ```
+ npm publish --access=public (私有域)
+ ```
